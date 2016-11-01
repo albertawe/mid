@@ -6,12 +6,12 @@ body {
 }
 -->
 </style>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" background="image/topbkg.jpg">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" background="image/topbg.jpg">
   <tr>
     <td width="90%" valign="top">
     </td>
     <td width="10%">
-     <img border="0" src="image/topright.jpg" width="203" height="68" align="right"></td>
+     <img border="0" src="image/oxlogos.png" width="300" height="100" align="right"></td>
   </tr>
 </table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#000000" background="img/blackbar.jpg">

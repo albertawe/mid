@@ -28,7 +28,7 @@ if(isset($submit))
 }
 if (isset($_SESSION[login]))
 {
-echo "<h1 class='style8' align=center>Wel come to Online Exam</h1>";
+echo "<h1 class='style8' align=center>Welcome to OnXam</h1>";
 		echo '<table width="28%"  border="0" align="center">
   <tr>
     <td width="7%" height="65" valign="bottom"><img src="image/HLPBUTT2.JPG" width="50" height="50" align="middle"></td>
@@ -55,18 +55,12 @@ echo "<h1 class='style8' align=center>Wel come to Online Exam</h1>";
   </tr>
   <tr>
     <td height="296" valign="top"><div align="center">
-        <h1 class="style8">Wel come to Online Quiz</h1>
-      <span class="style5"><img src="image/paathshala.jpg" width="129" height="100"><span class="style7"><img src="image/HLPBUTT2.JPG" width="50" height="50"><img src="image/BOOKPG.JPG" width="43" height="43"></span>        </span>
-        <param name="movie" value="english theams two brothers.dat">
-        <param name="quality" value="high">
-        <param name="movie" value="Drag to a file to choose it.">
-        <param name="quality" value="high">
-        <param name="BGCOLOR" value="#FFFFFF">
-<p align="left" class="style5">&nbsp;</p>
+        <h1>Welcome to OnXam</h1>
+      <span class="style5"><img src="image/edu.jpg" width="900" height="300"><span class="style7"></span>        </span>
+		<p align="left" class="style5">&nbsp;</p>
       <blockquote>
-          <p align="left" class="style5"><span class="style7">Wel Come to Online 
-            exam. This Site will provide the quiz for various subject of interest. 
-            You need to login for the take the online exam.</span></p>
+          <p align="left" class="style5"><span class="style7">OnXam will provide quiz for various subject of interest. 
+            Be a member and extend your knowledge!!</span></p>
       </blockquote>
     </div></td>
     <td valign="top"><form name="form1" method="post" action="">
