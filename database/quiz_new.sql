@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 3.2.4
+-- version 4.3.11
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Jun 08, 2015 at 05:32 PM
--- Server version: 5.1.41
--- PHP Version: 5.3.1
+-- Host: 127.0.0.1
+-- Generation Time: 01 Nov 2016 pada 04.37
+-- Versi Server: 5.5.24
+-- PHP Version: 5.6.8
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -22,43 +23,41 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mst_admin`
+-- Struktur dari tabel `mst_admin`
 --
 
 CREATE TABLE IF NOT EXISTS `mst_admin` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
   `loginid` varchar(50) NOT NULL,
-  `pass` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+  `pass` varchar(50) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mst_admin`
+-- Dumping data untuk tabel `mst_admin`
 --
 
 INSERT INTO `mst_admin` (`id`, `loginid`, `pass`) VALUES
-(1, 'sanjeev', 'sanjeev');
+(1, 'admin', 'admin1');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mst_question`
+-- Struktur dari tabel `mst_question`
 --
 
 CREATE TABLE IF NOT EXISTS `mst_question` (
-  `que_id` int(5) NOT NULL AUTO_INCREMENT,
+  `que_id` int(5) NOT NULL,
   `test_id` int(5) DEFAULT NULL,
   `que_desc` varchar(150) DEFAULT NULL,
   `ans1` varchar(75) DEFAULT NULL,
   `ans2` varchar(75) DEFAULT NULL,
   `ans3` varchar(75) DEFAULT NULL,
   `ans4` varchar(75) DEFAULT NULL,
-  `true_ans` int(1) DEFAULT NULL,
-  PRIMARY KEY (`que_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=41 ;
+  `true_ans` int(1) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mst_question`
+-- Dumping data untuk tabel `mst_question`
 --
 
 INSERT INTO `mst_question` (`que_id`, `test_id`, `que_desc`, `ans1`, `ans2`, `ans3`, `ans4`, `true_ans`) VALUES
@@ -76,12 +75,13 @@ INSERT INTO `mst_question` (`que_id`, `test_id`, `que_desc`, `ans1`, `ans2`, `an
 (28, 10, 'Which of the following snippets of code will unload a form named frmFo0rm from memory?', 'Unload Form', 'Unload This', 'Unload Me', 'Unload', 3),
 (29, 10, 'You want the text in text box named txtMyText to read My Text.In which property will you place this string?', 'Caption', 'Text', 'String', 'None of the above', 2),
 (30, 11, 'how to use date( ) in mysql ?', 'now( )', 'today( )', 'date( )', 'time( )', 0),
-(31, 11, 'how to use date( ) in mysql ?', 'now( )', 'today( )', 'date( )', 'time( )', 0);
+(31, 11, 'how to use date( ) in mysql ?', 'now( )', 'today( )', 'date( )', 'time( )', 0),
+(32, 8, 'what is continuation of vb?', 'visual basic', 'visual basin', 'visual bacin', 'vicual basic', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mst_result`
+-- Struktur dari tabel `mst_result`
 --
 
 CREATE TABLE IF NOT EXISTS `mst_result` (
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `mst_result` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mst_result`
+-- Dumping data untuk tabel `mst_result`
 --
 
 INSERT INTO `mst_result` (`login`, `test_id`, `test_date`, `score`) VALUES
@@ -108,17 +108,16 @@ INSERT INTO `mst_result` (`login`, `test_id`, `test_date`, `score`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mst_subject`
+-- Struktur dari tabel `mst_subject`
 --
 
 CREATE TABLE IF NOT EXISTS `mst_subject` (
-  `sub_id` int(5) NOT NULL AUTO_INCREMENT,
-  `sub_name` varchar(25) DEFAULT NULL,
-  PRIMARY KEY (`sub_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+  `sub_id` int(5) NOT NULL,
+  `sub_name` varchar(25) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mst_subject`
+-- Dumping data untuk tabel `mst_subject`
 --
 
 INSERT INTO `mst_subject` (`sub_id`, `sub_name`) VALUES
@@ -128,24 +127,24 @@ INSERT INTO `mst_subject` (`sub_id`, `sub_name`) VALUES
 (4, 'PHP'),
 (5, 'Computer Fundamental'),
 (6, 'Networking'),
-(7, 'mysql');
+(7, 'mysql'),
+(8, 'Phyton');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mst_test`
+-- Struktur dari tabel `mst_test`
 --
 
 CREATE TABLE IF NOT EXISTS `mst_test` (
-  `test_id` int(5) NOT NULL AUTO_INCREMENT,
+  `test_id` int(5) NOT NULL,
   `sub_id` int(5) DEFAULT NULL,
   `test_name` varchar(30) DEFAULT NULL,
-  `total_que` varchar(15) DEFAULT NULL,
-  PRIMARY KEY (`test_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+  `total_que` varchar(15) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mst_test`
+-- Dumping data untuk tabel `mst_test`
 --
 
 INSERT INTO `mst_test` (`test_id`, `sub_id`, `test_name`, `total_que`) VALUES
@@ -157,34 +156,31 @@ INSERT INTO `mst_test` (`test_id`, `sub_id`, `test_name`, `total_que`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mst_user`
+-- Struktur dari tabel `mst_user`
 --
 
 CREATE TABLE IF NOT EXISTS `mst_user` (
-  `user_id` int(5) NOT NULL AUTO_INCREMENT,
+  `user_id` int(5) NOT NULL,
   `login` varchar(20) DEFAULT NULL,
   `pass` varchar(20) DEFAULT NULL,
   `username` varchar(30) DEFAULT NULL,
   `address` varchar(50) DEFAULT NULL,
   `city` varchar(15) DEFAULT NULL,
-  `phone` int(10) DEFAULT NULL,
-  `email` varchar(30) DEFAULT NULL,
-  PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+  `phone` int(10) unsigned DEFAULT NULL,
+  `email` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mst_user`
+-- Dumping data untuk tabel `mst_user`
 --
 
 INSERT INTO `mst_user` (`user_id`, `login`, `pass`, `username`, `address`, `city`, `phone`, `email`) VALUES
-(1, 'raj', 'raj', 'Rajen', 'limbdi', 'limbdi', 9999, 'raj@yahoo.com'),
-(12, 'ashish', 'shah', 'ashish', 'laskdjf', 'S''nagar', 228585, 'ashish@yahoo.com'),
-(14, 'Dhaval123', 'a', 'a', 'a', 'a', 0, 'dhaval@yahoo.com');
+(1, 'admin', 'admin', 'admin', 'jalan listrik', 'medan', 9999, 'hahaha@gmail.com');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mst_useranswer`
+-- Struktur dari tabel `mst_useranswer`
 --
 
 CREATE TABLE IF NOT EXISTS `mst_useranswer` (
@@ -200,7 +196,7 @@ CREATE TABLE IF NOT EXISTS `mst_useranswer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mst_useranswer`
+-- Dumping data untuk tabel `mst_useranswer`
 --
 
 INSERT INTO `mst_useranswer` (`sess_id`, `test_id`, `que_des`, `ans1`, `ans2`, `ans3`, `ans4`, `true_ans`, `your_ans`) VALUES
@@ -217,8 +213,74 @@ INSERT INTO `mst_useranswer` (`sess_id`, `test_id`, `que_des`, `ans1`, `ans2`, `
 ('idjir9pcq2d07764us8rdiq9n5', 11, 'how to use date( ) in mysql ?', 'now( )', 'today( )', 'date( )', 'time( )', 0, 2),
 ('idjir9pcq2d07764us8rdiq9n5', 11, 'how to use date( ) in mysql ?', 'now( )', 'today( )', 'date( )', 'time( )', 0, 2),
 ('idjir9pcq2d07764us8rdiq9n5', 11, 'how to use date( ) in mysql ?', 'now( )', 'today( )', 'date( )', 'time( )', 0, 1),
-('idjir9pcq2d07764us8rdiq9n5', 11, 'how to use date( ) in mysql ?', 'now( )', 'today( )', 'date( )', 'time( )', 0, 1);
+('idjir9pcq2d07764us8rdiq9n5', 11, 'how to use date( ) in mysql ?', 'now( )', 'today( )', 'date( )', 'time( )', 0, 1),
+('858eejjqlu8na0cpos0jbvtu84', 8, 'What  Default Data Type ?', 'String', 'Variant', 'Integer', 'Boolear', 2, 2),
+('858eejjqlu8na0cpos0jbvtu84', 8, 'What is Default Form Border Style ?', 'Fixed Single', 'None', 'Sizeable', 'Fixed Diaglog', 3, 3),
+('858eejjqlu8na0cpos0jbvtu84', 8, 'Which is not type of Control ?', 'text', 'lable', 'checkbox', 'option button', 1, 3);
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `mst_admin`
+--
+ALTER TABLE `mst_admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `mst_question`
+--
+ALTER TABLE `mst_question`
+  ADD PRIMARY KEY (`que_id`);
+
+--
+-- Indexes for table `mst_subject`
+--
+ALTER TABLE `mst_subject`
+  ADD PRIMARY KEY (`sub_id`);
+
+--
+-- Indexes for table `mst_test`
+--
+ALTER TABLE `mst_test`
+  ADD PRIMARY KEY (`test_id`);
+
+--
+-- Indexes for table `mst_user`
+--
+ALTER TABLE `mst_user`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `mst_admin`
+--
+ALTER TABLE `mst_admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `mst_question`
+--
+ALTER TABLE `mst_question`
+  MODIFY `que_id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=33;
+--
+-- AUTO_INCREMENT for table `mst_subject`
+--
+ALTER TABLE `mst_subject`
+  MODIFY `sub_id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT for table `mst_test`
+--
+ALTER TABLE `mst_test`
+  MODIFY `test_id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT for table `mst_user`
+--
+ALTER TABLE `mst_user`
+  MODIFY `user_id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
