@@ -73,11 +73,11 @@ else
 				$w=$_SESSION[qn]-$_SESSION[trueans];
 				echo "<tr class=fans><td>Wrong Answer<td> ". $w;
 				echo "</table>";
-				mysql_query("insert into mst_result(login,test_id,test_date,score) values('$login',$tid,'".date("Y/M/D")."',$_SESSION[trueans])") or die(mysql_error());
+				mysql_query("insert into mst_result(login,test_id,test_date,score) values('$login',$tid,'".date("Y/m/d")."',$_SESSION[trueans])") or die(mysql_error());
 				echo "<h1 align=center><a href=review.php> Review Question</a> </h1>";
 				unset($_SESSION[qn]);
 				unset($_SESSION[sid]);
-				unset($_SESSION[tid]);
+	isset($_SESSION[tid]);
 				unset($_SESSION[trueans]);
 				exit;
 		}
