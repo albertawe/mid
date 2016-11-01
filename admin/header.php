@@ -1,10 +1,8 @@
 <style type="text/css">
-<!--
 body {
 	margin-left: 0px;
 	margin-top: 0px;
 }
--->
 </style>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" background="image/topbg.jpg">
   <tr>
