@@ -50,12 +50,12 @@ echo "<h1 class='style8' align=center>Welcome to OnXam</h1>";
 <table width="100%" border="0">
   <tr>
     <td width="70%" height="25">&nbsp;</td>
-    <td width="1%" rowspan="2" bgcolor="#CC3300"><span class="style6"></span></td>
-    <td width="29%" bgcolor="#CC3333"><div align="center" class="style1">User Login </div></td>
+    <td width="1%" rowspan="2"><span class="style6"></span></td>
+    <td width="29%" bgcolor="#A9A9A9"><div align="center" class="style1">User Login </div></td>
   </tr>
   <tr>
     <td height="296" valign="top"><div align="center">
-        <h1>Welcome to OnXam</h1>
+        <h1 class="style8">Welcome to OnXam</h1>
       <span class="style5"><img src="image/edu.jpg" width="900" height="300"><span class="style7"></span>        </span>
 		<p align="left" class="style5">&nbsp;</p>
       <blockquote>
@@ -88,12 +88,9 @@ echo "<h1 class='style8' align=center>Welcome to OnXam</h1>";
 		  <input name="submit" type="submit" id="submit" value="Login">		  </td>
         </tr>
         <tr>
-          <td colspan="2" bgcolor="#CC3300"><div align="center"><span class="style4">New User ? <a href="signup.php">Signup Free</a></span></div></td>
+          <td colspan="2"><div align="center"><span class="style4">New User ? <a href="signup.php">Signup Free</a></span></div></td>
           </tr>
       </table>
-      <div align="center">
-        <p class="style5"><img src="images/topleft.jpg" width="134" height="128">          </p>
-        </div>
     </form></td>
   </tr>
 </table>

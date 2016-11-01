@@ -87,12 +87,11 @@ include("header.php");
 ?>
  <table width="100%" border="0">
    <tr>
-     <td width="132" rowspan="2" valign="top"><span class="style8"><img src="images/connected_multiple_big.jpg" width="131" height="155"></span></td>
      <td width="468" height="57"><h1 align="center"><span class="style8">New User Signup</span></h1></td>
    </tr>
    <tr>
      <td><form name="form1" method="post" action="signupuser.php" onSubmit="return check();">
-       <table width="301" border="0" align="left">
+       <table width="400" border="0" align="center">
          <tr>
            <td><div align="left" class="style7">Login Id </div></td>
            <td><input type="text" name="lid"></td>
