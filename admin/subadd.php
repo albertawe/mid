@@ -45,7 +45,7 @@ return true;
 }
 </script>
 
-<div style="margin:auto;width:90%;height:500px;box-shadow:2px 1px 2px 2px #CCCCCC;text-align:left">
+<div style="margin:auto;width:90%;height:250px;box-shadow:2px 1px 2px 2px #CCCCCC;text-align:left">
 <title>Add Subject</title>
 <form name="form1" method="post" onSubmit="return check();">
   <table width="41%"  border="0" align="center">
