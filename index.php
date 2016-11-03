@@ -40,6 +40,7 @@ echo "<h1 class='style8' align=center>Welcome to OnXam</h1>";
   </tr>
 </table>';
    
+include("footer.html");
 		exit;
 		
 
