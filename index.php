@@ -94,6 +94,8 @@ echo "<h1 class='style8' align=center>Welcome to OnXam</h1>";
     </form></td>
   </tr>
 </table>
-
+<?php
+include("footer.html");
+?>
 </body>
 </html>

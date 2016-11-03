@@ -66,7 +66,7 @@ return true;
 }
 </script>
 
-<div style="margin:auto;width:90%;height:350px;box-shadow:2px 1px 2px 2px #CCCCCC;text-align:left">
+<div style="margin:auto;width:90%;height:350 px;box-shadow:2px 1px 2px 2px #CCCCCC;text-align:left">
 <form name="form1" method="post" onSubmit="return check();">
   <table width="80%"  border="1" align="center">
     <tr>
