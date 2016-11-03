@@ -24,6 +24,9 @@ echo "<br><div class=head1><a href=index.php>Login</a></div>";
 
 
 ?>
+<?php
+include("footer.html");
+?>
 </body>
 </html>
 

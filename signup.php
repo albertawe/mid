@@ -134,5 +134,8 @@ include("header.php");
    </tr>
  </table>
  <p>&nbsp; </p>
+ <?php
+include("footer.html");
+?>
 </body>
 </html>

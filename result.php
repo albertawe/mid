@@ -29,5 +29,8 @@ echo "<tr class=style8><td>$row[0] <td align=center> $row[1] <td align=center> $
 }
 echo "</table>";
 ?>
+<?php
+include("footer.html");
+?>
 </body>
 </html>

@@ -20,5 +20,8 @@ while($row=mysql_fetch_row($rs))
 }
 echo "</table>";
 ?>
+<?php
+include("footer.html");
+?>
 </body>
 </html>

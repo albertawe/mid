@@ -51,3 +51,8 @@ echo "<tr><td><input type=submit name=submit value='Finish'></form>";
 
 echo "</table></table>";
 ?>
+<?php
+include("footer.html");
+?>
+</body>
+</html>

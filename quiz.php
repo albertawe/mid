@@ -109,5 +109,8 @@ else
 echo "<tr><td><input type=submit name=submit value='Get Result'></form>";
 echo "</table></table>";
 ?>
+<?php
+include("footer.html");
+?>
 </body>
 </html>
