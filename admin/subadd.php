@@ -31,7 +31,9 @@ if (mysql_num_rows($rs)>0)
 mysql_query("insert into mst_subject(sub_name) values ('$subname')",$cn) or die(mysql_error());
 echo "<p align=center>Subject  <b> \"$subname \"</b> Added Successfully.</p>";
 $submit="";
+
 }
+include("footer.html");
 ?>
 <SCRIPT LANGUAGE="JavaScript">
 function check() {

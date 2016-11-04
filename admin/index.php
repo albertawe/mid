@@ -43,6 +43,8 @@ include("header.php");
 </table>
 
 </form>
-
+<?php
+include("footer.html");
+?>
 </body>
 </html>

@@ -42,5 +42,8 @@ else if(!isset($_SESSION[alogin]))
 			<p align="center" class="head1">&nbsp;</p>
 </div>
 </div>
+<?php
+include("footer.html");
+?>
 </body>
 </html>

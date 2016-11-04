@@ -80,4 +80,8 @@ echo "<option value='$row[0]'>$row[1]</option>";
     </tr>
   </table>
 </form>
+<?php
+include("footer.html");
+?>
 <p>&nbsp; </p>
+
