@@ -77,6 +77,7 @@ echo "<option value='$row[0]'>$row[1]</option>";
       <td height="26"></td>
       <td>&nbsp;</td>
       <td><input type="submit" name="submit" value="Add" ></td>
+        <button><a href="login.php">back</a></button>
     </tr>
   </table>
 </form>

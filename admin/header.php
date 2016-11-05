@@ -12,11 +12,7 @@ body {
      <img border="0" src="image/oxlogos.png" width="300" height="100" align="right"></td>
   </tr>
 </table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#000000" background="img/blackbar.jpg">
-  <tr>
-    <td width="100%" align="right"><img border="0" src="image/blackbar.jpg" width="89" height="15"></td>
-  </tr>
-  </Table>
+
   <Table width="100%">
   <tr>
   <td>

@@ -33,7 +33,6 @@ echo "<p align=center>Subject  <b> \"$subname \"</b> Added Successfully.</p>";
 $submit="";
 
 }
-include("footer.html");
 ?>
 <SCRIPT LANGUAGE="JavaScript">
 function check() {
@@ -65,8 +64,12 @@ return true;
       <td height="26"></td>
       <td>&nbsp;</td>
       <td><input type="submit" name="submit" value="Add" ></td>
+      <button><a href="login.php">back</a></button>
     </tr>
   </table>
 </form>
 <p>&nbsp; </p>
 </div>
+<?php
+include("footer.html");
+?>

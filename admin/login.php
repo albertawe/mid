@@ -39,7 +39,7 @@ else if(!isset($_SESSION[alogin]))
 			<p class="style7"><a href="subadd.php">Add Subject</a></p>
 			<p class="style7"><a href="testadd.php">Add Test</a></p>
 			<p class="style7"><a href="questionadd.php">Add Question </a></p>
-			<p align="center" class="head1">&nbsp;</p>
+			<p align="center" class="head1">  <button><a href="index.php">logout</a></button></p>
 </div>
 </div>
 <?php
